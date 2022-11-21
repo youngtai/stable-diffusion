@@ -78,7 +78,7 @@ data:
     train:
       target: ldm.data.simple.local_dataset
       params:
-        name: people-training-resized
+        name: mixed-training-images
         image_transforms:
         - target: torchvision.transforms.Resize
           params:
@@ -92,8 +92,8 @@ data:
       target: ldm.data.simple.TextOnly
       params:
         captions:
-        - "a tired girl with glasses and a baseball cap"
-        - "a boy working at a computer"
+        - "a girl standing next to a red dragon behind her"
+        - "a boy standing next to a green dragon behind him"
         output_size: 512
         n_gpus: 1 # small hack to sure we see all our samples
 
